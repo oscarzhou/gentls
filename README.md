@@ -1,8 +1,8 @@
 
 
-# Instruction 
+# Introduction
 
-A docker image used to generate self-signed CA, Server and Client Certificates. 
+A docker image used to generate self-signed mTLS CA, Server and Client Certificates. 
 
 ## Supported platforms
 
@@ -14,7 +14,7 @@ A docker image used to generate self-signed CA, Server and Client Certificates.
 1. Mount your local directory to `/data` in the container.
 2. Set the `CN` environment variable to your domain or ip address. If you use for localhost, you can set `CN` to your private ip address. If you use for your domain, you can set `CN` to your domain. If you want to add multiple domains, you can use comma to separate them.
 3. Run the container.
-4. The generated certificates will be in the mounted directory.
+4. The certificates and key files will be generated in the mounted directory.
 
 ```
 mkdir -p certs
